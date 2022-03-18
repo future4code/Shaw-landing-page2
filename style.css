@@ -1,4 +1,249 @@
 *{
     margin: 0;
     padding: 0;
+    color: #51260e;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+/* Definições Header*/
+
+header{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px double #51260e;
+}
+#header-flexpai{
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    height: auto;
+}
+#header-esquerda{
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#logo{
+    /* background-color: aqua; */
+    border-right: 3px double #51260e;
+    display: flex;
+    width: 220px;
+    align-items: center;
+    margin:10px 0;
+}
+#logo-img1{
+    width: 55px;
+}
+#menu-header{
+    /* background-color: aqua; */
+    display: flex; 
+    flex-flow: row wrap;
+}
+#menu-header p{
+    font-size: 20px;
+    margin: 0 10px;
+}
+.login{
+    /* background-color: aqua; */
+    border-left: 3px double #51260e;
+    padding: 4.5px 0;
+}
+.login button{
+    border: 3px double #51260e;
+    background-color: #ffffffff;
+    font: bold 21px serif;
+    margin: 2px 0px;
+    padding: 7px;
+}
+#botao-criar{
+    border: none;
+    background-color: #ffffffff;
+    font: bold 21px serif;
+    margin: 2px 0px;
+    padding: 7px;
+}
+
+/* Definições responsividade Header*/
+
+@media screen and (min-device-width:439px) and (max-device-width:995px){
+
+    #header-esquerda{
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    #menu-header{
+        display: none; 
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (min-device-width:386px) and (max-device-width:438px){
+
+    #header-esquerda{
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    #logo{
+        border-right: 0px double #51260e;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        margin:10px 0;
+    }
+    #logo-img2{
+        width: 70%;
+    }
+    #logo-img1{
+        width: 30%;
+    }
+    #menu-header{
+        display: none; 
+        flex-flow: row wrap;
+    }
+    .login{
+        /* background-color: aqua; */
+        border-left: 3px double #51260e;
+        padding: 4.5px 0;
+    }
+    .login button{
+        border: 3px double #51260e;
+        background-color: #ffffffff;
+        font: bold 18px serif;
+        margin: 2px 0px;
+        padding: 7px;
+    }
+    #botao-criar{
+        border: none;
+        background-color: #ffffffff;
+        font: bold 18px serif;
+        margin: 2px 0px;
+        padding: 7px;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width:385px){
+
+    #header-esquerda{
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    #logo{
+        border-right: 0px double #51260e;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        margin:10px 0;
+    }
+    #logo-img2{
+        width: 70%;
+    }
+    #logo-img1{
+        width: 30%;
+    }
+    #menu-header{
+        display: none; 
+        flex-flow: row wrap;
+    }
+    .login{
+        border-left: 3px double #51260e;
+        padding: 4.5px 20px;
+    }
+    .login button{
+        border: 3px double #51260e;
+        background-color: #ffffffff;
+        font: bold 18px serif;
+        margin: 2px 0px;
+        padding: 7px;
+    }
+    #botao-criar{
+        display: none;
+        border: none;
+        background-color: #ffffffff;
+        font: bold 18px serif;
+        margin: 2px 0px;
+        padding: 7px;
+    }
+}
+
+/* Definições da Main */
+
+#container-chamadas{
+    background-color: #fa9e60;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+#chamada1{
+    width: 50%;
+    height: 20vh;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;   
+}
+#chamada1 h1{
+    margin: 10px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+#chamada1 h2{
+    margin: 10px 0;
+    font-size: 21px;
+    font-weight: lighter;
+}
+#pesquisa-endereco{
+    /* background-color: aqua; */
+    width: 65%;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pesquisa-endereco input{
+    width: 80%;
+    padding: 10px;
+    border: 3px double ;
+}
+#pesquisa-endereco button{
+    border: 3px double #51260e;
+    background-color: #ffffffff;
+    font: bold 18px serif;
+    padding: 10px;
+}
+
+/* Responsividade Container Chamadas*/
+
+@media screen and (min-device-width:320px) and (max-device-width:425px){
+    #chamada1{
+        width: 85%;
+        height: 20vh;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;   
+    }
+    #pesquisa-endereco{
+        /* background-color: aqua; */
+        width: 85%;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
