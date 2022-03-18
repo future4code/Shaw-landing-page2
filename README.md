@@ -1,17 +1,17 @@
 # landing-page-template
 
-POR FAVOR, EDITE ESSA MENSAGEM INSERINDO AS INFORMAÇÕES DO SEU PROJETO. COMECE APAGANDO ESSA LINHA.
 
-### INSIRA O NOME NOME DO PROJETO AQUI
+### Projeto 4Food
 
 ### O que funciona
-- DESCREVA O QUE FUNCIONA NO SEU PROJETO
+- Apenas algumas animações em cards links para redes sociais.
 
 ### O que não funciona
-- DESCREVA O QUE NÃO FUNCIONA NO SEU PROJETO
+- Botões de criar conta e entrar, barra de pesquisa e cards ainda não tem link ou funcionalidades.
 
 ### Link Surge 
-A PARTIR DA SEMANA 5, INSIRA AQUI O LINK DO SURGE. **ANTES DISSO, APAGUE ESSAS DUAS LINHAS.**
+torpid-church.surge.sh
 
 ### Imagens
-TIRE PRINTS DAS TELAS DO SEU SITE E COLE AQUI
+
+![print_pagina inicial1](https://user-images.githubusercontent.com/99031516/159094070-be15f684-2a56-4faf-b810-47034c63631f.jpg)
