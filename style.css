@@ -225,27 +225,185 @@ header{
     font: bold 18px serif;
     padding: 10px;
 }
+#chamada3{
+    background-color: #ffffffff;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+#cards-grandes{
+    width: 75%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+#card-grande1{
+    background-color: tomato;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    box-shadow: 2px 2px 5px darkgrey;
+}
+#card-grande1 img{
+    width: 40%; 
+    margin-left: 20%;   
+    margin-right: 10%;   
+}
+#card-grande1 button{
+    border: 3px double #51260e;
+    background-color: inherit;
+    font: bold 21px serif;
+    width: max-content;
+    margin: 15px 0px;
+    padding: 7px;
+}
+#card-grande2{
+    background-color: rgb(114, 255, 71);
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    box-shadow: 2px 2px 5px darkgrey;
+}
+#card-grande2 img{
+    width: 50%; 
+    margin-left: 20%;   
+    margin-right: 10%;
+}
+#card-grande2 button{
+    border: 3px double #51260e;
+    background-color: inherit;
+    font: bold 21px serif;
+    margin: 15px 0px;
+    padding: 7px;
+}
+.img-card{
+    /* background-color: #fa9e60; */
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#cards-pequenos{
+    width: 75%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 3px double #51260e;
+}
+.card-pequeno{
+    /* background-color: aqua; */
+    width: 20%;
+}
+.card-pequeno img{
+    width: 100%;
+}
+.card-pequeno p{
+    margin: 10px 0;
+    font-size: 21px;
+}
+.card-pequeno:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 
 /* Responsividade Container Chamadas*/
+
+@media screen and (min-device-width:1750px) and (max-device-width:2560px){
+    #menu-header p{
+        font-size: 26px;
+    }
+    #chamada1 h1{
+        font-size: 41px;
+    }
+    #chamada1 h2{
+        font-size: 25px;
+    }
+    #pesquisa-endereco input{
+        font-size: 21px;
+    }
+    #card-grande1 button{
+        font: bold 31px serif;
+        margin: 25px 0px;
+    }
+    #card-grande2 button{
+        font: bold 31px serif;
+        margin: 25px 0px;
+    }
+    .card-pequeno p{
+        font-size: 31px;
+    }
+}
 
 @media screen and (min-device-width:320px) and (max-device-width:425px){
     #chamada1{
         width: 85%;
-        height: 20vh;
-        padding: 40px 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;   
     }
     #pesquisa-endereco{
-        /* background-color: aqua; */
         width: 85%;
-        padding-bottom: 70px;
-        display: flex;
-        flex-direction: row;
+    }
+    #card-grande1{
+        padding-top:10px;
+        padding-right:15px;
+        align-items: center;
+    }
+    #card-grande1{
+        font-size: 15px;
+    }
+    #card-grande2{
+        padding-left: 0px;
+        align-items: center;
+    }
+    #card-grande2{
+        font-size: 15px;
+    }
+    .img-card{
         justify-content: center;
     }
+    .img-card img{
+        display: none;
+    }
+    .card-pequeno p{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-device-width:300px) and (max-device-width:320px){
+    #card-grande1{
+        font-size: 12px;
+    }
+    #card-grande2{
+        font-size: 12px;
+    }
+    .card-pequeno p{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+}
+footer{  
+    border-top: 3px double #51260e;  
+    padding: 15px 10px;
+    display: flex;  
+    align-items: center; 
+    /* background-color: aqua;  */   
 }
 
 /* <<<<<<<<< id = chamada2 >>>>>>>>>> */
@@ -257,11 +415,7 @@ header{
     justify-content: center;
     margin-top: 10px;
     min-height: 50vh;    
-    column-gap: 10px;
-    
-    /* background-color: #51260e;  */
-    
-    
+    column-gap: 10px;          
 }
 #container-produtos{
     display: flex;
@@ -295,7 +449,6 @@ header{
     -webkit-transform: scale(1.3);
     transform: scale(1.1);
     transition: 0.2s;
-
 }
 .img-produtos{
     width: 100%;
@@ -330,19 +483,13 @@ header{
     
 }
 
-
-
 /* <<<<<<<<<<< Section e Footer>>>>>>>>>>> */
 .filhos{
-    text-align: center;   
-   
-    
+    text-align: center;
 }
-
 .icones img{
     width: 20px;
 }
-
 section{
     display: flex;       
     columns: repeat(3);    
@@ -350,8 +497,7 @@ section{
     margin: 20px;
     height: 50vh;
     text-align: center;  
-    border: 20px;
-    
+    border: 20px; 
 }
 section h3{
     width: 30vw;
@@ -364,32 +510,24 @@ section h3{
     flex-flow: row wrap;
     text-align: center;
     width: 90vw;
-    justify-content: center;  
-
-    
+    justify-content: center;      
 }
 section p{
     margin-bottom: 20px;
 }
-
-footer{    
-    padding: 10px;
-    display: flex;    
-    
-    
-}
-
-.logo img{
-    width: 50px;   
-
-}
-.logo{    
+.logo{
     align-items: flex-end;
     margin: 5px;
 }
-.divP{    
-    margin: 5px;
-    
+.logo img{
+    width: 150px;   
+}
+.divP{
+    margin: 5px;  
+}
+footer{    
+    padding: 10px;
+    display: flex;       
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<Responsividade da chamada2>>>>>>>>>>>>>>>>> */
@@ -398,41 +536,34 @@ footer{
     
     .card-produtos p{
         font-size: 0.8rem;
-    }
-    
+    }   
     #container-mercados{ 
         display: grid; 
         grid-template-columns: repeat(2, 50%);        
         gap: 10px;        
         margin: 0 20px;
-        padding: 0 10px;     
-        
-    }   
-    
+        padding: 0 10px;       
+    }       
     .card-mercado{
         width: 120px;
         padding: 5px;
         margin: 10px;
     }
-
     .texto-mercado h3{       
         font-size: 0.8rem;
     }
     .texto-mercado p{
         font-size: 0.6rem;
     }
-
     .img-mercado{
         width: 50%;
     }
-
     .filhos{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
     }
-
     section{
         height: 60vh;
     }
