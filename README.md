@@ -4,7 +4,7 @@
 ### Projeto 4Food
 
 ### O que funciona
-- Apenas algumas animações em cards links para redes sociais.
+- Apenas algumas animações em cards e links para redes sociais.
 
 ### O que não funciona
 - Botões de criar conta e entrar, barra de pesquisa e cards ainda não tem link ou funcionalidades.
